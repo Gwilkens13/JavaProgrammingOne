@@ -1,19 +1,20 @@
-
 package Chapter3;
+
 import java.util.Scanner;
+
 /**
  * Write a program that compares the price and weight of 2 packages.
- * 
+ *
  * @author Gavin Wilkens
  */
-
 public class C3_33 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 

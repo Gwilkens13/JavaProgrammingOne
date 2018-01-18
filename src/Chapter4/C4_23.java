@@ -1,16 +1,18 @@
 package Chapter4;
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
+
 /**
  * Write a program that reads information and prints a payroll statement.
- * 
+ *
  * @author Gavin Wilkens
  */
-
 public class C4_23 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
@@ -28,33 +30,34 @@ public class C4_23 {
         double stateTax = input.nextDouble();
 
         double grossPay = hours * hourlyRate;
-        
+
         double fedTaxWithholding = grossPay * fedTax;
-        
+
         double stateTaxWithholding = grossPay * stateTax;
-    
+
         double totalDeduction = fedTaxWithholding + stateTaxWithholding;
-        
+
         double netPay = grossPay - totalDeduction;
 
-        System.out.println("Employee Name: Smith" + name +
-                "\nPay Rate: " + formatCurrency(hourlyRate) +
-                "\nHours Worked: " + hours +
-                "\nGross Pay: " + formatCurrency(grossPay) +
-                "\nDeductions:" +
-                "\n  Federal Withholding ("+ formatPercent(fedTax)+"): " + formatCurrency(fedTaxWithholding) +
-                "\n  State Withholding ("+ formatPercent(stateTax)+"): " + formatCurrency(stateTaxWithholding) +
-                "\n  Total Deduction: " + formatCurrency(totalDeduction) +
-                "\nNet Pay: " + formatCurrency(netPay));
+        System.out.println("Employee Name: Smith" + name
+                + "\nPay Rate: " + formatCurrency(hourlyRate)
+                + "\nHours Worked: " + hours
+                + "\nGross Pay: " + formatCurrency(grossPay)
+                + "\nDeductions:"
+                + "\n  Federal Withholding (" + formatPercent(fedTax) + "): " + formatCurrency(fedTaxWithholding)
+                + "\n  State Withholding (" + formatPercent(stateTax) + "): " + formatCurrency(stateTaxWithholding)
+                + "\n  Total Deduction: " + formatCurrency(totalDeduction)
+                + "\nNet Pay: " + formatCurrency(netPay));
     }
 
     public static String formatCurrency(double money) {
 
-        return  DecimalFormat.getCurrencyInstance().format(money);
+        return DecimalFormat.getCurrencyInstance().format(money);
     }
+
     public static String formatPercent(double percent) {
 
-        return  DecimalFormat.getPercentInstance().format(percent);
+        return DecimalFormat.getPercentInstance().format(percent);
     }
 
 }

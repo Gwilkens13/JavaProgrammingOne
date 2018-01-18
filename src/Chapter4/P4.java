@@ -1,17 +1,17 @@
-
 package Chapter4;
 
 import java.util.Scanner;
 
 /**
- * Write a program that will compare 2 bids for a construction project. 
- * 
+ * Write a program that will compare 2 bids for a construction project.
+ *
  * @author Gavin Wilkens
  */
 public class P4 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
@@ -35,21 +35,19 @@ public class P4 {
         double firstCost = (firstWork * firstCharge);
         double secondCost = (secondWork * secondCharge);
         //Write an if else statement for the output and add two decimal places.
-        if (firstCost < secondCost){
-            System.out.println(firstName + " is the winner with " +  String.format( "%.2f", firstCost ));
-        }
-        else if (secondCost < firstCost){
+        if (firstCost < secondCost) {
+            System.out.println(firstName + " is the winner with " + String.format("%.2f", firstCost));
+        } else if (secondCost < firstCost) {
             System.out.println(secondName + " is the winner with " + String.format("%.2f", secondCost));
         }
-        if (firstCost == secondCost && firstWork < secondWork){
-            System.out.println(firstName + " is the winner with "  + String.format( "%.2f", firstCost ) + " and " + firstWork);
+        if (firstCost == secondCost && firstWork < secondWork) {
+            System.out.println(firstName + " is the winner with " + String.format("%.2f", firstCost) + " and " + firstWork);
+        } else if (firstCost == secondCost && secondWork < firstWork) {
+            System.out.println(secondName + " is the winner with " + String.format("%.2f", secondCost) + " and " + secondWork);
         }
-        else if (firstCost == secondCost && secondWork < firstWork){
-            System.out.println(secondName + " is the winner with " + String.format( "%.2f", secondCost ) + " and " + secondWork );
-        }
-        if (firstCost == secondCost && secondWork == firstWork ){
+        if (firstCost == secondCost && secondWork == firstWork) {
             System.out.println(firstName + " and " + secondName + " have identical bids with " + firstCharge + " per hour and " + firstWork + " hours worked and a total cost of " + firstCost);
         }
-        }
-                
+    }
+
 }

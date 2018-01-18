@@ -1,16 +1,18 @@
-
 package Chapter2;
+
 import java.util.Scanner;
+
 /**
- * Write a program that reads the subtotal and the gratuity rate, then computes the gratuity and total
- * 
+ * Write a program that reads the subtotal and the gratuity rate, then computes
+ * the gratuity and total
+ *
  * @author Gavin Wilkens
  */
-
 public class C2_5 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {

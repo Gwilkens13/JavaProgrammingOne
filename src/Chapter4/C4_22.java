@@ -1,16 +1,18 @@
-
 package Chapter4;
+
 import java.util.Scanner;
+
 /**
- *Write a program the prompts the user to enter 2 strings and reports whether the 2nd sting is a substring of the first one.
- * 
+ * Write a program the prompts the user to enter 2 strings and reports whether
+ * the 2nd sting is a substring of the first one.
+ *
  * @author Gavin Wilkens
  */
-
 public class C4_22 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
