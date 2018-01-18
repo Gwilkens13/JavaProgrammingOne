@@ -1,16 +1,18 @@
-
 package Chapter3;
+
 import java.util.Scanner;
+
 /**
- * Write a program that tells whether a number is divisible by 5 and 6, by 5 or 6, and 5 or 6 but not both.
- * 
+ * Write a program that tells whether a number is divisible by 5 and 6, by 5 or
+ * 6, and 5 or 6 but not both.
+ *
  * @author Gavin Wilkens
  */
-
 public class C3_26 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {

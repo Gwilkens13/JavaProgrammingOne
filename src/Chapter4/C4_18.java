@@ -1,20 +1,21 @@
-
 package Chapter4;
+
 import java.util.Scanner;
+
 /**
- *Write a program that prompts the user to enter 2 characters and displays the major status represented by their characters.
- * 
+ * Write a program that prompts the user to enter 2 characters and displays the
+ * major status represented by their characters.
+ *
  * @author Gavin Wilkens
  */
-
-
 public class C4_18 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         String s;
         try (Scanner input = new Scanner(System.in)) {
@@ -36,13 +37,19 @@ public class C4_18 {
     public static String getSchoolYear(char schoolYear) {
 
         switch (schoolYear) {
-            case '1': return "Freshman";
-            case '2': return "Sophomore";
-            case '3': return "Junior";
-            case '4': return "Senior";
-                default: return null;
+            case '1':
+                return "Freshman";
+            case '2':
+                return "Sophomore";
+            case '3':
+                return "Junior";
+            case '4':
+                return "Senior";
+            default:
+                return null;
         }
     }
+
     public static String getMajor(char major) {
 
         major = Character.toUpperCase(major);
@@ -57,9 +64,6 @@ public class C4_18 {
                 return null;
         }
 
-
     }
 
 }
-
-

@@ -1,15 +1,18 @@
-
 package Chapter2;
+
 import java.util.Scanner;
+
 /**
- * Write a program that reads in the radius and length of a cylinder and computes the area and volume.
+ * Write a program that reads in the radius and length of a cylinder and
+ * computes the area and volume.
+ *
  * @author Gavin Wilkens
  */
-
 public class C2_2 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
